@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiClocks", "MauiClocks\MauiClocks.csproj", "{C4354D73-271E-4C7A-866F-31E9BE9B8355}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiControls", "MauiControls\MauiControls.csproj", "{45A54CD6-B7E8-48A6-95C5-A544A2E8A1BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4354D73-271E-4C7A-866F-31E9BE9B8355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4354D73-271E-4C7A-866F-31E9BE9B8355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4354D73-271E-4C7A-866F-31E9BE9B8355}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C4354D73-271E-4C7A-866F-31E9BE9B8355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4354D73-271E-4C7A-866F-31E9BE9B8355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4354D73-271E-4C7A-866F-31E9BE9B8355}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{45A54CD6-B7E8-48A6-95C5-A544A2E8A1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A54CD6-B7E8-48A6-95C5-A544A2E8A1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A54CD6-B7E8-48A6-95C5-A544A2E8A1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A54CD6-B7E8-48A6-95C5-A544A2E8A1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDF3DD43-39B4-47BD-8600-D1E7792E62B5}
+	EndGlobalSection
+EndGlobal

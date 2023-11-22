@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:waitWatch="clr-namespace:MauiControls.WaitWatch;assembly=MauiControls"
+             x:Class="MauiClocks.MainPage">
+
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" Orientation="Horizontal" Spacing="5" >
+            <RadioButton Content="Green"   Padding="5,0" Value="Green"   Background="Green" TextColor="White" GroupName="colors" IsChecked="{Binding GreenBtn, Mode=TwoWay}" />
+            <RadioButton Content="Red  "   Padding="2,0" Value="Red"   Background="Red"    TextColor="White" GroupName="colors" IsChecked="{Binding RedBtn, Mode=TwoWay}" />
+            <RadioButton Content="Orange"  Padding="1,0" Value="Orange"  Background="Orange" TextColor="White" GroupName="colors" IsChecked="{Binding OrangeBtn, Mode=TwoWay}"/>
+            <RadioButton Content="Yellow"  Padding="1,0" Value="Yellow"  Background="Yellow" TextColor="Black" GroupName="colors" IsChecked="{Binding YellowBtn, Mode=TwoWay}" />
+        </StackLayout>
+        <Switch Grid.Row="1" x:Name="OnOffSwitch" IsToggled="True" HorizontalOptions="End" />
+        <waitWatch:WaitWatchView  x:Name="MyView" Grid.Row="2" VerticalOptions="Center" WidthRequest="300" HeightRequest="300" Start="{Binding Path=IsToggled, Source={x:Reference OnOffSwitch}}" Paint="{Binding SelectedColor, Mode=TwoWay}" />
+    </Grid>
+</ContentPage>
